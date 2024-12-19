@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "serviciosenfermeria"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "serviciosenfermeria-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
